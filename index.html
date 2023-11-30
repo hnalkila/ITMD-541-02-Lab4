@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sunrise Sunset Dashboard</title>
+</head>
+<body>
+    <video autoplay loop muted play-inline class ="back-video">
+        <source src = "sunset_animation.mp4" type="video/mp4">
+    </video>
+    <header>
+        <h1>Sunrise Sunset Dashboard</h1>
+    </marquee>
+    </header>
+    <main>
+        <section id="location-section">
+            <div id="location-search">
+                <label for="location-search-input">Enter Search Location</label>
+                <input type="text" id="location-search-input" placeholder="e.g., New York">
+                <button id="location-search-btn">Search Location</button>
+            </div>
+            <br>
+            <div id="current-location">
+                <button id="current-location-btn">Get Current Location</button>
+            </div>
+        </section>
+        <section id="dashboard" class="hidden">
+            <div id="today-container">
+                <p>To display the sunrise and sunset timings of a particular location, please enter the location details in the provided space</p>
+            </div>
+            <div id="tomorrow-container" >
+                <p>Click on Get Current Location button to display the current location's sunrise and sunset timings</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by &copy; 2023 Haindavi Nalkila</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
